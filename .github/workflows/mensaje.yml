@@ -1,10 +1,12 @@
 name: Generar mensaje
-on: [push]
-Branches: -main
+on: 
+  push:
+    branches: 
+      - main
 
 jobs:
-  generar-mensaje:
+  generar-y-build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generar mensaje
-        run: echo "Hola a todos!!!!!!!!!"
+    - name: Generar mensaje
+      run: echo "Hola a todos!!!!!!!!!"
