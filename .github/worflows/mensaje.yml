@@ -1,6 +1,7 @@
 name: Generar mensaje
 on: [push]
-Branches: -main
+Branches:
+  - main
 
 jobs:
   generar-mensaje:
